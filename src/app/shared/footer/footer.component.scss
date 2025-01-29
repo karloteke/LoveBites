@@ -1,0 +1,61 @@
+/* footer.component.scss */
+footer {
+    background-color: black;
+    width: 100%;
+    position: relative;
+    bottom: 0px;      // Asegura que el footer esté al fondo de la página
+    color: white;     
+    text-align: center;
+    padding: 10px; 
+
+    .logo img {
+        width: 60px;   
+        height: auto;
+        margin-bottom: 10px;  // Espacio entre el logo y los enlaces
+    }
+
+    .nav-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            display: flex;
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        li {
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                font-size: 20px;
+                font-family: "Poppins", serif;
+                font-weight: 200;
+                font-style: italic;
+                color: white;
+                padding: 10px;
+                transition: color 0.3s ease-in-out;  // Transición suave para el hover
+                cursor: pointer; 
+            }
+
+            a:hover {
+                color: #E6AFA3;  
+            }
+        }
+    }
+
+    p {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        color: white;
+        padding: 10px;  
+        font-family: "Poppins", serif;
+        font-weight: 200;
+        font-style: italic;
+    }
+}

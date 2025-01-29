@@ -1,22 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Título</title>
-    <link rel="stylesheet" href="header.component.scss">
-</head>
-<body>
-    <nav>
-        <div class="logo">
-            <img src="images/anilloBodas.png" alt="Logo anillo de bodas">
-        </div>
-        <ul>
-            <li><a [routerLink]="['/inicio']" routerLinkActive="router-link-active">Inicio</a></li>
-            <li><a [routerLink]="['/diseños']" routerLinkActive="router-link-active">Diseños</a></li>
-            <li><a [routerLink]="['/blog']" routerLinkActive="router-link-active">Blog</a></li>
-            <li><a [routerLink]="['/contacto']" routerLinkActive="router-link-active">Contacto</a></li>
-        </ul>
-    </nav>
-</body>
-</html>
+
+<nav>
+    <div class="logo">
+        <img src="images/logo.png" alt="Logo anillo de bodas">
+    </div>
+    <ul>
+        <li><a [routerLink]="['/inicio']" routerLinkActive="router-link-active">Inicio</a></li>
+        <li><a [routerLink]="['/diseños']" routerLinkActive="router-link-active">Diseños</a></li>
+        <li><a [routerLink]="['/blog']" routerLinkActive="router-link-active">Blog</a></li>
+        <li><a [routerLink]="['/contacto']" routerLinkActive="router-link-active">Contacto</a></li>
+    </ul>
+</nav>
+

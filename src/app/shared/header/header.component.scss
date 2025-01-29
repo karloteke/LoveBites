@@ -1,5 +1,6 @@
 nav {
-    background-color: #444444;
+    background-color:#F8F8F8; 
+    color:#2C2C2C;
     padding: 15px;
     display: flex;
     justify-content: center;
@@ -22,22 +23,28 @@ nav {
   
         a {
           text-decoration: none;
-          color: white;
+          color: rgb(71, 71, 71);
+          font-family: "Crimson Text", serif;
+          font-weight: 500;
+          font-style: normal;
           font-weight: bold;
           padding: 10px 15px;
-          transition: 0.3s;
-          font-size: 25px;
+          font-size: 22px;
   
           &:hover {   // `&:hover` es equivalente a `a:hover`, permite anidar estilos dentro del mismo selector
-            background-color: #555;
-            border-radius: 5px;
+            color:#8C7851;
           }
   
-          &.router-link-active { // `.router-link-active` se aplica automáticamente cuando el enlace está activo en Angular
-            color:#D4AF37; 
+          &.router-link-active { // `.router-link-active` se aplica automáticamente cuando el enlace está activo
+            color: #E6AFA3; 
           }
         }
       }
     }
   }
   
+  // .poppins-extralight-italic {
+  //   font-family: "Poppins", serif;
+  //   font-weight: 200;
+  //   font-style: italic;
+  // }
