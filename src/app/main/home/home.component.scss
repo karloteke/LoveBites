@@ -1,0 +1,87 @@
+.section {
+    img {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .home-introduction {
+        padding:0 80px;
+
+        h1 {
+            font-size: 40px;
+            font-family: "Crimson Text", serif;
+            font-weight: bold;
+            color: #b93e66;
+            text-align: center;
+            padding-top: 60px;
+        }
+
+        p {
+            font-size: 23px;
+            font-family: "Crimson Text", serif;
+            font-weight: bold;
+            color: #2C2C2C;
+            text-align: center;
+            padding-top: 20px;
+        }
+    }
+
+    .home-body {
+        padding: 20px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 40px;
+            font-family: "Crimson Text", serif;
+            font-weight: bold;
+            color: #b93e66;
+        }
+
+        ul {
+            list-style-type: none;  /* Elimina los puntos por defecto */
+            padding: 0;
+            margin: 30px 0;
+
+            li {
+                font-size: 23px;
+                font-family: "Crimson Text", serif;
+                font-weight: bold;
+                color: #2C2C2C;
+                margin-bottom: 20px;
+            }
+
+            .check-color{
+                color:  #b93e66;
+                display: inline-block;
+            }
+        }
+
+        button {
+            background-color: #b93e66;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px; 
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        button:hover {
+            background-color: #9e2c4e; /* Color más oscuro al pasar el mouse */
+            transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+        }
+
+        button:focus {
+            outline: none;  /* Remueve el borde del enfoque */
+        }
+    }
+}
