@@ -1,7 +1,7 @@
 
 .container-design{
 
-	h1{
+	h2{
 		font-size: 40px;
 		font-family: "Crimson Text", serif;
 		font-weight: bold;
@@ -13,19 +13,55 @@
 		font-size: 23px;
 		font-family: "Crimson Text", serif;
 		font-weight: bold;
-		color: #4b4b4b;
+		color: #797A73;
+		text-align: center;
+		padding: 0 40px;
+	}
+
+	h3{
+		font-size: 35px;
+		font-family: "Crimson Text", serif;
+		font-weight: bold;
+		color: #b93e66;
 		text-align: center;
 	}
+
+	ul {
+		list-style-type: none; /* Quita los puntos */
+		font-size: 23px;
+		font-family: "Crimson Text", serif;
+		font-weight: bold;
+		color: #797A73;
+		text-align: center;
+		display: flex;
+		flex-direction: column; 
+		gap: 20px;	
+	}
+	
+	li {
+		text-align: left; 
+		padding: 0 40px;
+	}
+	
+
+	.fas {
+		color: #ff6347;  /* Rojo tomate */
+		font-size: 20px;  /* Tamaño del icono */
+		margin-right: 10px;  /* Espaciado a la derecha */
+	}
+	
 }
 
+
+
 /* Estilo para el botón "Editar Invitación" */
-.edit-template {
+.view-template {
     display: inline-block;
     padding: 10px 20px;
     background-color:  #b93e66;
-    color: white;  /* Color del texto */
+    color: white; 
     text-decoration: none;  /* Elimina el subrayado del enlace */
-    border-radius: 5px;  /* Bordes redondeados */
+    border-radius: 5px;  
     font-size: 18px;  /* Tamaño de la fuente */
     position: absolute;
     bottom: 30px;  /* Coloca el botón cerca de la parte inferior de la imagen */
@@ -34,7 +70,7 @@
     z-index: 2;  /* Asegura que el botón esté encima de otras capas */
   }
 
-  .edit-template:hover {
+  .view-template:hover {
     background-color: #b93e66;
     cursor: pointer; 
   }
@@ -73,6 +109,7 @@
 	  max-width: 1100px;
 	  margin: 0 auto;
 	  padding: 0 20px;
+	  background:#F8F8F8;
   }
   
   .carousel {

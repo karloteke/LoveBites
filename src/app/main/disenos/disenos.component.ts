@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-disenos',
   standalone: true,
-  imports: [RouterModule],
+  imports: [HomeComponent],
   templateUrl: './disenos.component.html',
   styleUrl: './disenos.component.scss'
 })

@@ -1,16 +1,27 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, Output, EventEmitter } from '@angular/core';
+
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  @Output() scrollToSection = new EventEmitter<string>();
+
+  scrollTo(sectionId: string): void {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      // Ajuste para un encabezado fijo
+      const headerOffset = 60; // Ajusta este valor a la altura de tu header
+      const elementPosition = section.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - headerOffset;
   
-  constructor() { 
-    debugger;
-  }
-}
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  } 
+} 
