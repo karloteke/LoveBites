@@ -12,104 +12,31 @@
     </ul>
 </section>
 
-<section>
-    <div class="container">
-        <div class="carousel">
-            <input type="radio" name="slides" checked="checked" id="slide-1">
-            <input type="radio" name="slides" id="slide-2">
-            <input type="radio" name="slides" id="slide-3">
-            <input type="radio" name="slides" id="slide-4">
-            <input type="radio" name="slides" id="slide-5">
-            <input type="radio" name="slides" id="slide-6">
-            <ul class="carousel__slides">
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1041/800/450" alt="">
-                        </div>
-                        <figcaption>
-                        <h1 class="credit">Clásica</h1>
-                        Una invitación elegante con detalles dorados.   
-                        <a href="" class="view-template">Ver invitación</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1043/800/450" alt="">
-                        </div>
-                        <figcaption>
-                        <h1 class="credit">Romántica</h1>   
-                        Diseño romántico con flores suaves y delicadas.                            
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1044/800/450" alt="">
-                        </div>
-                        <figcaption>
-                        <h1 class="credit">Elegante</h1>  
-                        Un diseño minimalista y elegante.                          
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1045/800/450" alt="">
-                        </div>
-                        <figcaption>
-                        <h1 class="credit">Vintage</h1>        
-                        Un toque vintage con detalles antiguos.
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1049/800/450" alt="">
-                        </div>
-                        <figcaption>
-                        <h1 class="credit">Boho</h1>  
-                        Invitación con un diseño bohemio y moderno.                          
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="carousel__slide">
-                    <figure>
-                        <div>
-                            <img src="https://picsum.photos/id/1052/800/450" alt="">
-                        </div>
-                        <figcaption>
-                        <h1 class="credit">Botánica</h1>  
-                        Invitación con un diseño natural y elementos botánico.                          
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>    
-            <ul class="carousel__thumbnails">
-                <li>
-                    <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
-                </li>
-                <li>
-                    <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
-                </li>
-            </ul>
+<div class="mobile-mockup">
+    <div class="slider-container">
+      <div #slider class="slider">
+        <div class="slider-item">
+            <img src="images/mobile.png" alt="Mockup de móvil" class="mockup-image">
+            <button class="view-button">Ver diseño</button>
         </div>
-    </div>    
-</section>
+        <div class="slider-item">
+            <img src="images/mobile.png" alt="Mockup de móvil" class="mockup-image">
+            <button class="view-button">Ver diseño</button>
+        </div>
+        <div class="slider-item">
+            <img src="images/mobile.png" alt="Mockup de móvil" class="mockup-image">
+            <button class="view-button">Ver diseño</button>  
+        </div>
+      </div>
+    </div>
+
+<button class="prev floating-btn" (click)="moveSlide(-1)">
+    <span>&#10094;</span>
+</button>
+<button class="next floating-btn" (click)="moveSlide(1)">
+    <span>&#10095;</span>
+</button>
+
+
+  
+
