@@ -1,0 +1,37 @@
+<div class="invitacion-container">
+    <header class="header">
+      <div class="names">
+        <h1>Juan & Maria</h1>
+        <p>Nos Casamos</p>
+      </div>
+      <div class="rings">
+        <img src="assets/alianzas-doradas.png" alt="Alianzas Doradas">
+      </div>
+    </header>
+  
+    <section class="date-time">
+      <h2>Fecha: 12 de Mayo, 2025</h2>
+      <h3>Hora: 6:00 PM</h3>
+    </section>
+  
+    <section class="countdown">
+      <h4>Faltan {{ daysLeft }} días</h4>
+    </section>
+  
+    <section class="confirmation">
+      <button (click)="confirmarAsistencia()">Confirmar Asistencia</button>
+    </section>
+  
+    <section class="playlist">
+      <h4>Crea la playlist para la boda</h4>
+      <input type="text" placeholder="Agrega una canción" (keyup.enter)="agregarCancion($event)">
+      <ul>
+        <li *ngFor="let cancion of canciones">{{ cancion }}</li>
+      </ul>
+    </section>
+  
+    <section class="account">
+      <p>Cuenta para contribuciones: 123-456-789</p>
+    </section>
+  </div>
+  
